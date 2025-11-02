@@ -13,7 +13,7 @@ A Swift library for rendering file trees and directory structures with result bu
 Add the following to your `Package.swift` dependencies:
 
 ```swift
-.package(url: "https://github.com/mjhgh/SwiftFileTreeRenderer.git", from: "1.0.0")
+.package(url: "https://github.com/mjhgh/SwiftFileTreeRenderer.git", from: "1.0.1")
 ```
 
 Then add `SwiftFileTreeRenderer` as a dependency for your target:
