@@ -4,8 +4,9 @@
 import PackageDescription
 
 let package = Package(
-  name: "FileTreeRenderer",
+  name: "SwiftFileTreeRenderer",
   platforms: [.macOS(.v14)],
+  products: [.library(name: "SwiftFileTreeRenderer", targets: ["FileTreeRenderer"])],
   dependencies: [],
   targets: [
     .target(name: "FileTreeRenderer"),
