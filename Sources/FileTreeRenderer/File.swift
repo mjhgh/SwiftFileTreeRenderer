@@ -7,6 +7,10 @@ public struct File: FileTreeItem {
     self.name = name
     self.content = data
   }
+  public init(_ name: String, string: String, encoding: String.Encoding = .utf8) {
+    self.name = name
+    self.content = string.data(using: encoding) ?? Data()
+  }
   public init(_ name: String, content: FileBody) {
     self.init(name, data: content.data)
   }
